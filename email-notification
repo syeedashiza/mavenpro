@@ -6,8 +6,8 @@ node{
    sh'mvn clean install'
    }
   stage('email-notification'){
-  mail bcc: '', body: '''hi welcome to email notification in jenkins build is success
-  thanks and regards
-  syeeda''', cc: '', from: '', replyTo: '', subject: 'jenkins-job', to: 'syeeda'
+  mail bcc: '', body: '''notification of email to say build is success
+  regards and thanks
+    syeeda''', cc: '', from: '', replyTo: '', subject: 'pipeline email', to: 'syeedabanu1991@gmail.com'
   }
 }  
